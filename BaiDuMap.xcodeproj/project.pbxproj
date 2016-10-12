@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2C7F241DAC982300D4A7DD /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C7F231DAC982300D4A7DD /* BaiduMapAPI.framework */; };
+		2E2C7F291DAC9AF000D4A7DD /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C7F281DAC9AF000D4A7DD /* location.png */; };
 		2E6A766D1DAB76F300E26663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A766C1DAB76F300E26663 /* main.m */; };
 		2E6A76701DAB76F300E26663 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A766F1DAB76F300E26663 /* AppDelegate.m */; };
 		2E6A76731DAB76F300E26663 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A76721DAB76F300E26663 /* ViewController.mm */; };
@@ -15,7 +17,6 @@
 		2E6A767B1DAB76F300E26663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A76791DAB76F300E26663 /* LaunchScreen.storyboard */; };
 		2E6A76861DAB76F300E26663 /* BaiDuMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A76851DAB76F300E26663 /* BaiDuMapTests.m */; };
 		2E6A76911DAB76F300E26663 /* BaiDuMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A76901DAB76F300E26663 /* BaiDuMapUITests.m */; };
-		2E6A76A01DAB777C00E26663 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6A769F1DAB777C00E26663 /* BaiduMapAPI.framework */; };
 		2E6A76A21DAB779100E26663 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6A76A11DAB779000E26663 /* CoreLocation.framework */; };
 		2E6A76A41DAB779C00E26663 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6A76A31DAB779C00E26663 /* QuartzCore.framework */; };
 		2E6A76A61DAB77AA00E26663 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6A76A51DAB77AA00E26663 /* OpenGLES.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E2C7F231DAC982300D4A7DD /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		2E2C7F281DAC9AF000D4A7DD /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		2E6A76681DAB76F300E26663 /* BaiDuMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDuMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6A766C1DAB76F300E26663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E6A766E1DAB76F300E26663 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,7 +65,6 @@
 		2E6A768C1DAB76F300E26663 /* BaiDuMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiDuMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6A76901DAB76F300E26663 /* BaiDuMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiDuMapUITests.m; sourceTree = "<group>"; };
 		2E6A76921DAB76F300E26663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E6A769F1DAB777C00E26663 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		2E6A76A11DAB779000E26663 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2E6A76A31DAB779C00E26663 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2E6A76A51DAB77AA00E26663 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -88,8 +90,8 @@
 				2E6A76A81DAB77B200E26663 /* SystemConfiguration.framework in Frameworks */,
 				2E6A76A61DAB77AA00E26663 /* OpenGLES.framework in Frameworks */,
 				2E6A76A41DAB779C00E26663 /* QuartzCore.framework in Frameworks */,
+				2E2C7F241DAC982300D4A7DD /* BaiduMapAPI.framework in Frameworks */,
 				2E6A76A21DAB779100E26663 /* CoreLocation.framework in Frameworks */,
-				2E6A76A01DAB777C00E26663 /* BaiduMapAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2C7F251DAC99AD00D4A7DD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C7F281DAC9AF000D4A7DD /* location.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		2E6A765F1DAB76F300E26663 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		2E6A766A1DAB76F300E26663 /* BaiDuMap */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C7F251DAC99AD00D4A7DD /* Image */,
 				2E6A766E1DAB76F300E26663 /* AppDelegate.h */,
 				2E6A766F1DAB76F300E26663 /* AppDelegate.m */,
 				2E6A76711DAB76F300E26663 /* ViewController.h */,
@@ -177,6 +188,7 @@
 		2E6A769E1DAB772500E26663 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C7F231DAC982300D4A7DD /* BaiduMapAPI.framework */,
 				2E6A76B11DAB799F00E26663 /* libstdc++.6.0.9.tbd */,
 				2E6A76AF1DAB799600E26663 /* CoreTelephony.framework */,
 				2E6A76AD1DAB798D00E26663 /* libsqlite3.0.tbd */,
@@ -186,7 +198,6 @@
 				2E6A76A51DAB77AA00E26663 /* OpenGLES.framework */,
 				2E6A76A31DAB779C00E26663 /* QuartzCore.framework */,
 				2E6A76A11DAB779000E26663 /* CoreLocation.framework */,
-				2E6A769F1DAB777C00E26663 /* BaiduMapAPI.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -304,6 +315,7 @@
 			files = (
 				2E6A767B1DAB76F300E26663 /* LaunchScreen.storyboard in Resources */,
 				2E6A76B51DAB79E100E26663 /* mapapi.bundle in Resources */,
+				2E2C7F291DAC9AF000D4A7DD /* location.png in Resources */,
 				2E6A76781DAB76F300E26663 /* Assets.xcassets in Resources */,
 				2E6A76761DAB76F300E26663 /* Main.storyboard in Resources */,
 			);
@@ -423,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -460,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -471,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -487,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -566,6 +580,7 @@
 				2E6A76971DAB76F300E26663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E6A76981DAB76F300E26663 /* Build configuration list for PBXNativeTarget "BaiDuMapTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +589,7 @@
 				2E6A769A1DAB76F300E26663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E6A769B1DAB76F300E26663 /* Build configuration list for PBXNativeTarget "BaiDuMapUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +598,7 @@
 				2E6A769D1DAB76F300E26663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

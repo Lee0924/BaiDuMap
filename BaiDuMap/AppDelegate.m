@@ -22,8 +22,8 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
-    [self.window addSubview:navigationController.view];
-    [self.window makeKeyAndVisible];
+//    [self.window addSubview:navigationController.view];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 
