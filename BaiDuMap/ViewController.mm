@@ -19,6 +19,8 @@
     BMKMapView* mapView;
     BMKLocationService *locServer;
     
+    UILabel *myLocationLab;
+    
 }
 @end
 
@@ -39,14 +41,22 @@
     locServer.delegate = self;
     
     
-    
+    /*定位按钮*/
     UIButton *locationBtn = [[UIButton alloc] init];
     locationBtn.frame = CGRectMake(10, mapView.frame.size.height-30, 28, 28);
     [locationBtn addTarget:self action:@selector(locationCLick) forControlEvents:UIControlEventTouchUpInside];
     locationBtn.backgroundColor = [UIColor clearColor];
     [locationBtn setImage:[UIImage imageNamed:@"location.png"] forState:UIControlStateNormal];
-    
     [self.view addSubview:locationBtn];
+    
+    /*显示我所在的地理位置信息*/
+    myLocationLab = [[UILabel alloc] init];
+    myLocationLab.frame = CGRectMake(0, 40, self.view.bounds.size.width, 20);
+    myLocationLab.font = [UIFont systemFontOfSize:14];
+    myLocationLab.backgroundColor = [UIColor clearColor];
+    myLocationLab.textColor = [UIColor blackColor];
+    myLocationLab.alpha = 0.8;
+    [self.view addSubview:myLocationLab];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -108,9 +118,29 @@
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation
 {
     //        NSLog(@"didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
-//    [self getCity:userLocation.location];
+    [self getCity:userLocation.location];
     [mapView updateLocationData:userLocation];
 }
+
+//获取当前城市
+- (void)getCity:(CLLocation*)location{
+    
+    CLGeocoder *geocoder=[[CLGeocoder alloc]init];
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        CLPlacemark * placemark = [placemarks objectAtIndex:0];
+        if (placemark.subLocality != nil) {
+            
+            NSString * mapCityName = placemark.locality;//城市
+            NSString * mapAreaName = placemark.subLocality;//区
+            NSString * mapThoroughfare = placemark.thoroughfare;//街道
+            NSString *mapCity=[NSString stringWithFormat:@"%@-%@-%@",mapCityName,mapAreaName,mapThoroughfare];
+//            NSLog(@"%@--%@--%@",mapCityName,mapAreaName,mapThoroughfare);
+            myLocationLab.text = mapCity;
+
+        }
+    }];
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [mapView viewWillAppear];
