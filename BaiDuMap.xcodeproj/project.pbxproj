@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2E2C7F241DAC982300D4A7DD /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C7F231DAC982300D4A7DD /* BaiduMapAPI.framework */; };
 		2E2C7F291DAC9AF000D4A7DD /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C7F281DAC9AF000D4A7DD /* location.png */; };
+		2E2F7DB51DED27AC00EDE9E5 /* BaiDuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F7DB41DED27AC00EDE9E5 /* BaiDuView.m */; };
+		2E2F7DB81DED2F1F00EDE9E5 /* jfsc_jfdd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2F7DB61DED2F1F00EDE9E5 /* jfsc_jfdd@2x.png */; };
+		2E2F7DB91DED2F1F00EDE9E5 /* jfsc_jfdd@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2F7DB71DED2F1F00EDE9E5 /* jfsc_jfdd@3x.png */; };
+		2E2F7DC51DEDA95D00EDE9E5 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F7DC41DEDA95D00EDE9E5 /* UIImage+Rotate.m */; };
 		2E6A766D1DAB76F300E26663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A766C1DAB76F300E26663 /* main.m */; };
 		2E6A76701DAB76F300E26663 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A766F1DAB76F300E26663 /* AppDelegate.m */; };
 		2E6A76731DAB76F300E26663 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A76721DAB76F300E26663 /* ViewController.mm */; };
@@ -49,6 +53,12 @@
 /* Begin PBXFileReference section */
 		2E2C7F231DAC982300D4A7DD /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		2E2C7F281DAC9AF000D4A7DD /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		2E2F7DB31DED27AC00EDE9E5 /* BaiDuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuView.h; sourceTree = "<group>"; };
+		2E2F7DB41DED27AC00EDE9E5 /* BaiDuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuView.m; sourceTree = "<group>"; };
+		2E2F7DB61DED2F1F00EDE9E5 /* jfsc_jfdd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jfsc_jfdd@2x.png"; sourceTree = "<group>"; };
+		2E2F7DB71DED2F1F00EDE9E5 /* jfsc_jfdd@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jfsc_jfdd@3x.png"; sourceTree = "<group>"; };
+		2E2F7DC31DEDA95D00EDE9E5 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		2E2F7DC41DEDA95D00EDE9E5 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
 		2E6A76681DAB76F300E26663 /* BaiDuMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDuMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6A766C1DAB76F300E26663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E6A766E1DAB76F300E26663 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				2E2C7F281DAC9AF000D4A7DD /* location.png */,
+				2E2F7DB61DED2F1F00EDE9E5 /* jfsc_jfdd@2x.png */,
+				2E2F7DB71DED2F1F00EDE9E5 /* jfsc_jfdd@3x.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -150,6 +162,10 @@
 				2E6A766F1DAB76F300E26663 /* AppDelegate.m */,
 				2E6A76711DAB76F300E26663 /* ViewController.h */,
 				2E6A76721DAB76F300E26663 /* ViewController.mm */,
+				2E2F7DB31DED27AC00EDE9E5 /* BaiDuView.h */,
+				2E2F7DB41DED27AC00EDE9E5 /* BaiDuView.m */,
+				2E2F7DC31DEDA95D00EDE9E5 /* UIImage+Rotate.h */,
+				2E2F7DC41DEDA95D00EDE9E5 /* UIImage+Rotate.m */,
 				2E6A76741DAB76F300E26663 /* Main.storyboard */,
 				2E6A76771DAB76F300E26663 /* Assets.xcassets */,
 				2E6A76791DAB76F300E26663 /* LaunchScreen.storyboard */,
@@ -277,6 +293,7 @@
 				TargetAttributes = {
 					2E6A76671DAB76F300E26663 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 589DY7NT3C;
 					};
 					2E6A76801DAB76F300E26663 = {
 						CreatedOnToolsVersion = 7.2;
@@ -317,6 +334,8 @@
 				2E6A76B51DAB79E100E26663 /* mapapi.bundle in Resources */,
 				2E2C7F291DAC9AF000D4A7DD /* location.png in Resources */,
 				2E6A76781DAB76F300E26663 /* Assets.xcassets in Resources */,
+				2E2F7DB81DED2F1F00EDE9E5 /* jfsc_jfdd@2x.png in Resources */,
+				2E2F7DB91DED2F1F00EDE9E5 /* jfsc_jfdd@3x.png in Resources */,
 				2E6A76761DAB76F300E26663 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +363,8 @@
 			files = (
 				2E6A76731DAB76F300E26663 /* ViewController.mm in Sources */,
 				2E6A76701DAB76F300E26663 /* AppDelegate.m in Sources */,
+				2E2F7DB51DED27AC00EDE9E5 /* BaiDuView.m in Sources */,
+				2E2F7DC51DEDA95D00EDE9E5 /* UIImage+Rotate.m in Sources */,
 				2E6A766D1DAB76F300E26663 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 589DY7NT3C;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 589DY7NT3C;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
